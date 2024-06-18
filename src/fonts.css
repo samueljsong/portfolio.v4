@@ -1,0 +1,44 @@
+@font-face {
+    font-family: elephant;
+    src: url(./assets/fonts/Elephant-PersonalUse.ttf);
+}
+
+@font-face {
+    font-family: heading26;
+    src: url(./assets/fonts/HeadingNowTrial-26Bold.ttf);
+}
+
+@font-face {
+    font-family: heading36;
+    src: url(./assets/fonts/HeadingNowTrial-36Bold.ttf);
+}
+
+@font-face {
+    font-family: humane-bold;
+    src: url(./assets/fonts/Humane-Bold.woff2);
+}
+
+@font-face {
+    font-family: humane-semibold;
+    src: url(./assets/fonts/Humane-SemiBold.woff2);
+}
+
+@font-face {
+    font-family: kiona;
+    src: url(./assets/fonts/Kiona-Regular.ttf);
+}
+
+@font-face {
+    font-family: monument;
+    src: url(./assets/fonts/MonumentExtended-Ultrabold.otf);
+}
+
+@font-face {
+    font-family: satoshi-bold;
+    src: url(./assets/fonts/Satoshi-Bold.woff2);
+}
+
+@font-face {
+    font-family: satoshi-medium;
+    src: url(./assets/fonts/Satoshi-Medium.woff2);
+}
