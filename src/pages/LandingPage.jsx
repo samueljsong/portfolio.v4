@@ -12,6 +12,12 @@ import "../index.css";
 import linkedIn from "../assets/img/linkedin.svg";
 import github from "../assets/img/git.svg";
 
+//Components
+import {
+    PageTransition,
+    pageTransitionHandler,
+} from "../components/PageTransition";
+
 //Functions
 import { useGSAP } from "@gsap/react";
 
@@ -89,17 +95,22 @@ export const LandingPage = () => {
         gsap.to(buttonRef.current, {
             scale: 0.9,
             duration: 0.1,
-        }).then(() => {
-            gsap.to(buttonRef.current, {
-                scale: 1,
-                duration: 0.1,
+        })
+            .then(() => {
+                gsap.to(buttonRef.current, {
+                    scale: 1,
+                    duration: 0.1,
+                });
+            })
+            .then(() => {
+                pageTransitionHandler();
             });
-        });
     };
 
     return (
         <>
             <section ref={page} className="landing">
+                <PageTransition />
                 <div className="landing-container">
                     <div ref={infoRef} className="info-text-container text">
                         <span className="char">p</span>
