@@ -15,8 +15,11 @@
 
     --primary: #131313;
     --secondary: #ebe9e4;
+    /* --secondary: #ffffff; */
     --accent: #e0b082;
-    --tertiary: rgb(128, 128, 128);
+    --tertiary: #888888;
+    /* --highlight: #0cf2a2; */
+    --highlight: #7d887a;
 
     --btn-padding: 1rem 2rem 1rem 2rem;
     --mbtn-padding: 0.5rem 1rem 0.5rem 1rem;
@@ -33,7 +36,7 @@
 
 .heading {
     font-family: var(--ff-heading);
-    color: var(--primary);
+    color: var(--highlight);
 }
 
 .heading2 {

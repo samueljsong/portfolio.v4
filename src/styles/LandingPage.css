@@ -38,6 +38,7 @@
 
 .landing-btn {
     background: none;
+    /* background-color: #ffffff; */
     border: solid 1px var(--primary);
     border-radius: 25px;
     color: var(--primary);

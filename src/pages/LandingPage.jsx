@@ -43,7 +43,7 @@ export const LandingPage = () => {
                 y: 30,
                 ease: "power3.inOut",
                 duration: 1,
-                delay: 1.75,
+                delay: 1.55,
             });
         },
         { scope: infoRef }
@@ -56,16 +56,46 @@ export const LandingPage = () => {
             ease: "power3.inOut",
             duration: 1,
             pointerEvents: "none",
-            delay: 1.75,
+            delay: 1.55,
         });
 
         gsap.from(copyrightRef.current, {
             opacity: 0,
             ease: "power3.inOut",
             duration: 1,
-            delay: 1.75,
+            delay: 1.55,
         });
     });
+
+    const handleMouseEnter = () => {
+        gsap.to(buttonRef.current, {
+            y: -10,
+            duration: 0.1,
+            color: "var(--highlight)",
+            borderColor: "var(--highlight)",
+        });
+    };
+
+    const handleMouseExit = () => {
+        gsap.to(buttonRef.current, {
+            y: 0,
+            duration: 0.1,
+            color: "var(--primary)",
+            borderColor: "var(--primary)",
+        });
+    };
+
+    const handleClick = () => {
+        gsap.to(buttonRef.current, {
+            scale: 0.9,
+            duration: 0.1,
+        }).then(() => {
+            gsap.to(buttonRef.current, {
+                scale: 1,
+                duration: 0.1,
+            });
+        });
+    };
 
     return (
         <>
@@ -90,7 +120,13 @@ export const LandingPage = () => {
                         <span className="char">E</span>
                         <span className="char">L</span>
                     </h1>
-                    <button className="btn landing-btn text" ref={buttonRef}>
+                    <button
+                        className="btn landing-btn text"
+                        ref={buttonRef}
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseExit}
+                        onClick={handleClick}
+                    >
                         Enter
                     </button>
                 </div>
