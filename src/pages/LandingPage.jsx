@@ -3,6 +3,7 @@ import gsap from "gsap";
 
 //Hooks
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 //Styles
 import "../styles/LandingPage.css";
@@ -29,6 +30,8 @@ export const LandingPage = () => {
     const buttonRef = useRef(null);
     const copyrightRef = useRef(null);
     const page = useRef(null);
+
+    const navigate = useNavigate();
 
     useGSAP(
         () => {
@@ -91,26 +94,26 @@ export const LandingPage = () => {
         });
     };
 
-    const handleClick = () => {
-        gsap.to(buttonRef.current, {
+    const handleClick = async () => {
+        await gsap.to(buttonRef.current, {
             scale: 0.9,
             duration: 0.1,
-        })
-            .then(() => {
-                gsap.to(buttonRef.current, {
-                    scale: 1,
-                    duration: 0.1,
-                });
-            })
-            .then(() => {
-                pageTransitionHandler();
-            });
+        });
+
+        await gsap.to(buttonRef.current, {
+            scale: 1,
+            duration: 0.1,
+        });
+
+        await pageTransitionHandler();
+
+        navigate("/home");
     };
 
     return (
         <>
+            <PageTransition />
             <section ref={page} className="landing">
-                <PageTransition />
                 <div className="landing-container">
                     <div ref={infoRef} className="info-text-container text">
                         <span className="char">p</span>

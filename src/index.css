@@ -43,7 +43,7 @@
 
 .heading {
     font-family: var(--ff-heading);
-    color: var(--highlight);
+    color: var(--primary);
 }
 
 .heading2 {

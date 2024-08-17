@@ -3,6 +3,7 @@ import gsap from "gsap";
 
 //Hooks
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 //Styles
 import "../index.css";
@@ -24,10 +25,21 @@ export const PageTransition = () => {
     );
 };
 
-export const pageTransitionHandler = () => {
-    gsap.to(".block", {
+export const pageTransitionHandler = async () => {
+    await gsap.to(".block", {
         stagger: 0.1,
         marginTop: 0,
         duration: 0.5,
+    });
+
+    gsap.to(".landing, .copyright", {
+        display: "none",
+    });
+
+    await gsap.to(".block", {
+        stagger: 0.1,
+        marginTop: "100%",
+        duration: 0.7,
+        delay: 0.5,
     });
 };
