@@ -18,6 +18,8 @@
     --fs-text: 1.2rem;
     --mfs-text: 0.7rem;
 
+    --fs-heading: 3vw;
+
     --primary: #131313;
     --secondary: #ebe9e4;
     /* --secondary: #ffffff; */
@@ -56,13 +58,6 @@
     line-height: 100%;
 }
 
-.heading3 {
-    font-family: var(--ff-heading3);
-    color: var(--primary);
-    line-height: 100%;
-    letter-spacing: 1.1rem;
-}
-
 .heading4 {
     font-family: var(--ff-heading4);
     color: var(--primary);
@@ -72,6 +67,7 @@
 
 .text {
     font-family: var(--ff-text);
+    color: var(--primary);
     line-height: 100%;
     font-weight: 600;
 }

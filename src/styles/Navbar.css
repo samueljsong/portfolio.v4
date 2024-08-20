@@ -1,13 +1,14 @@
 .container {
     width: 90%;
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     left: 0;
     right: 0;
     margin: auto;
-    top: 10%;
+    top: 7%;
+    z-index: 5;
 }
 
 .container-size {
@@ -21,7 +22,7 @@
 
 .name {
     /* align-self: center; */
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     /* font-weight: 500; */
 }
 
@@ -32,4 +33,10 @@
 .nav {
     justify-items: flex-end;
     gap: 0.5rem;
+}
+
+div,
+h3,
+h2 {
+    background-color: transparent;
 }

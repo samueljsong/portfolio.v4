@@ -16,7 +16,7 @@ export const Navbar = () => {
     useGSAP(() => {
         gsap.from(".container", {
             opacity: 0,
-            top: "5%",
+            top: "0%",
             duration: 1,
             ease: "power2.out",
         });
@@ -26,15 +26,15 @@ export const Navbar = () => {
         <>
             <div className="container">
                 <div className="container-size">
-                    <h2 className="name text3">SAMUELSONG</h2>
+                    <h2 className="name text">SAMUELSONG</h2>
                 </div>
                 <div className="job-container">
-                    <h3 className="job text3">SOFTWARE DEVELOPER</h3>
+                    <h3 className="job text">SOFTWARE DEVELOPER</h3>
                 </div>
                 <div className="container-size nav">
-                    <h3 className="text3">01 INTRO</h3>
-                    <h3 className="text3">02 PROJECTS</h3>
-                    <h3 className="text3">03 CONTACT</h3>
+                    <h3 className="text">01 INTRO</h3>
+                    <h3 className="text">02 PROJECTS</h3>
+                    <h3 className="text">03 CONTACT</h3>
                 </div>
             </div>
         </>
