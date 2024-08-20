@@ -1,0 +1,35 @@
+.container {
+    width: 90%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10%;
+}
+
+.container-size {
+    width: 15rem;
+    display: grid;
+}
+
+.job-container {
+    display: grid;
+}
+
+.name {
+    /* align-self: center; */
+    font-size: 1.7rem;
+    /* font-weight: 500; */
+}
+
+.job {
+    /* align-self: center; */
+}
+
+.nav {
+    justify-items: flex-end;
+    gap: 0.5rem;
+}

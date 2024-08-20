@@ -42,3 +42,23 @@
     font-family: satoshi-medium;
     src: url(./assets/fonts/Satoshi-Medium.woff2);
 }
+
+@font-face {
+    font-family: satoshi-reg;
+    src: url(./assets//fonts/Satoshi-Regular.woff2);
+}
+
+@font-face {
+    font-family: satoshi-light;
+    src: url(./assets/fonts/Satoshi-Light.woff2);
+}
+
+@font-face {
+    font-family: bandica;
+    src: url(./assets/fonts/bandicapersonaluseregular-2v4zd.woff2);
+}
+
+@font-face {
+    font-family: monument-ub;
+    src: url(./assets/fonts/MonumentExtended-Ultrabold.otf);
+}

@@ -8,8 +8,12 @@
     /* Font Family */
     --ff-heading: heading36;
     --ff-text: kiona;
+    --ff-text2: satoshi-reg;
     --ff-bold: humane-bold;
     --ff-heading2: satoshi-bold;
+    --ff-text3: satoshi-light;
+    --ff-heading3: bandica;
+    --ff-heading4: monument-ub;
 
     --fs-text: 1.2rem;
     --mfs-text: 0.7rem;
@@ -52,10 +56,51 @@
     line-height: 100%;
 }
 
+.heading3 {
+    font-family: var(--ff-heading3);
+    color: var(--primary);
+    line-height: 100%;
+    letter-spacing: 1.1rem;
+}
+
+.heading4 {
+    font-family: var(--ff-heading4);
+    color: var(--primary);
+    line-height: 100%;
+    letter-spacing: 1.1rem;
+}
+
 .text {
     font-family: var(--ff-text);
     line-height: 100%;
-    font-weight: bold;
+    font-weight: 600;
+}
+
+/* regular */
+.text2 {
+    font-family: var(--ff-text2);
+    line-height: 100%;
+}
+
+/* light */
+.text3 {
+    font-family: var(--ff-text3);
+    line-height: 100%;
+}
+
+/* SCROLL BAR */
+
+body::-webkit-scrollbar {
+    width: 5px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--highlight); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
 }
 
 @media (max-width: 1534px) {

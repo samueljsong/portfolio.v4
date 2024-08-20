@@ -18,6 +18,7 @@
 .landing-title {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     font-size: 25vw;
+    /* font-size: 12vw; */
     background: none;
     user-select: none;
     line-height: 90%;
