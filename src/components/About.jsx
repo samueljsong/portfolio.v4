@@ -22,7 +22,7 @@ export const About = () => {
         const t1 = gsap.timeline();
 
         t1.from(".about-text", {
-            y: +130,
+            y: +200,
             stagger: 0.1,
             duration: 3,
             ease: "power2.out",
@@ -40,19 +40,6 @@ export const About = () => {
         <section className="about">
             <div className="about-container">
                 <div className="about-info-container">
-                    {/* <h2 className="heading2 about-text">
-                        Hey I'm <span className="about-name">Samuel</span>, a
-                        software
-                    </h2>
-                    <h2 className="heading2 about-text">
-                        developer currently looking
-                    </h2>
-                    <h2 className="heading2 about-text">
-                        for new opportunities
-                    </h2>
-                    <h2 className="heading2 about-text">
-                        to expand my skillset.
-                    </h2> */}
                     <div className="about-text-container">
                         <span className="heading2 about-text">Hey</span>
                         <span className="heading2 about-text">I'm</span>
