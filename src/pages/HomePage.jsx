@@ -8,6 +8,9 @@ import { useEffect, useRef, useState } from "react";
 import { Navbar } from "../components/Navbar";
 import { Contact } from "../components/Contact";
 import { Copyright } from "../components/Copyright";
+import { Separation } from "../components/Separation";
+import { Project } from "../components/Project";
+import { About } from "../components/About";
 
 //Styles
 import "../index.css";
@@ -62,7 +65,7 @@ export const HomePage = () => {
             x: () => -200,
             ease: "none",
             scrollTrigger: {
-                trigger: ".landing",
+                trigger: ".landingHome",
                 start: "top top",
                 end: "+=1000px",
                 scrub: true,
@@ -86,7 +89,7 @@ export const HomePage = () => {
             x: () => +200,
             ease: "none",
             scrollTrigger: {
-                trigger: ".landing",
+                trigger: ".landingHome",
                 start: "top top",
                 end: "+=1000px",
                 scrub: true,
@@ -99,37 +102,17 @@ export const HomePage = () => {
         <>
             <Navbar></Navbar>
             <div className="main-container">
-                <section className="landing">
-                    <div className="landing-info">
+                <section className="landingHome">
+                    <div className="landingHome-info">
                         <h1 className="heading4 software">SOFTWARE</h1>
                         <h1 className="heading4 developer">DEVELOPER</h1>
                     </div>
                 </section>
-                <span className="separation"></span>
-                <section className="about">
-                    <div className="about-container">
-                        <div>
-                            <h2 className="heading2 about-text">
-                                Hey I'm{" "}
-                                <span className="about-name">Samuel</span> a
-                                software
-                            </h2>
-                            <h2 className="heading2 about-text">
-                                developer currently looking
-                            </h2>
-                            <h2 className="heading2 about-text">
-                                for new opportunities
-                            </h2>
-                            <h2 className="heading2 about-text">
-                                to expand my skillset.
-                            </h2>
-                        </div>
-                    </div>
-                </section>
-                <span></span>
-                <section className="project">
-                    <h1>projects</h1>
-                </section>
+                <Separation num={"01"} text={"WHO AM I?"} side={"right"} />
+                <About></About>
+                <Separation num={"02"} text={"MY WORK"} side={"left"} />
+                <Project></Project>
+                <Separation num={"03"} text={"GET IN TOUCH?"} side={"right"} />
                 <Contact></Contact>
                 <Copyright />
             </div>

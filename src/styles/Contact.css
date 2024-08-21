@@ -28,6 +28,6 @@
     align-self: center;
     border: solid 1px var(--primary);
     width: 10rem;
-    border-radius: 15px;
+    border-radius: 50px;
     cursor: pointer;
 }

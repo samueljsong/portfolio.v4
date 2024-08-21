@@ -2,9 +2,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.landing {
+.landingHome {
     width: 100%;
     height: 100vh;
     display: grid;
@@ -13,7 +14,7 @@
     padding-bottom: 5vh;
 }
 
-.landing-info {
+.landingHome-info {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -52,37 +53,6 @@
 
 .text-md {
     font-size: 1vw;
-}
-
-.about {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20vh 0 20vh 0;
-}
-
-.about-container {
-    width: 90%;
-    display: flex;
-    align-items: center;
-}
-
-.about-text {
-    font-size: 4vw;
-    color: var(--primary);
-}
-
-.name-container {
-    position: relative;
-}
-
-.about-name {
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--primary);
-    background: none;
 }
 
 /* Projects */

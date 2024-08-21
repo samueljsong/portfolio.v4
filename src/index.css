@@ -4,6 +4,10 @@
     /* background-color: #ffffff; */
 }
 
+p {
+    background: none;
+}
+
 :root {
     /* Font Family */
     --ff-heading: heading36;
@@ -17,8 +21,9 @@
 
     --fs-text: 1.2rem;
     --mfs-text: 0.7rem;
+    --fs-satoshi-heading: 4vw;
 
-    --fs-heading: 3vw;
+    --fs-heading: 2vw;
 
     --primary: #131313;
     --secondary: #ebe9e4;
@@ -82,6 +87,10 @@
 .text3 {
     font-family: var(--ff-text3);
     line-height: 100%;
+}
+
+.fs-heading {
+    font-size: var(--fs-heading);
 }
 
 /* SCROLL BAR */
