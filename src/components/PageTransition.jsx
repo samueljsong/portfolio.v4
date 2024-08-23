@@ -38,7 +38,7 @@ export const pageTransitionHandler = async () => {
 
     await gsap.to(".block", {
         stagger: 0.1,
-        marginTop: "100%",
+        marginTop: "100vh",
         duration: 0.7,
         delay: 0.5,
     });

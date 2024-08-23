@@ -144,19 +144,19 @@ export const LandingPage = () => {
                         Enter
                     </button>
                 </div>
+                <div className="copyright" ref={copyrightRef}>
+                    <p className="fs-500">@2024 Samuel Song</p>
+                    <a
+                        href="https://www.linkedin.com/in/samuel-song-490743234/"
+                        target="_blank"
+                    >
+                        <img src={linkedIn} alt="" className="contact-icon" />
+                    </a>
+                    <a href="https://github.com/samueljsong" target="_blank">
+                        <img src={github} alt="" className="contact-icon" />
+                    </a>
+                </div>
             </section>
-            <div className="copyright" ref={copyrightRef}>
-                <p className="fs-500">@2024 Samuel Song</p>
-                <a
-                    href="https://www.linkedin.com/in/samuel-song-490743234/"
-                    target="_blank"
-                >
-                    <img src={linkedIn} alt="" className="contact-icon" />
-                </a>
-                <a href="https://github.com/samueljsong" target="_blank">
-                    <img src={github} alt="" className="contact-icon" />
-                </a>
-            </div>
         </>
     );
 };
