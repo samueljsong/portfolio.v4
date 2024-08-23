@@ -24,12 +24,17 @@
     font-size: 1.2rem;
 }
 
+.contact-info2 {
+    opacity: 0;
+}
+
 .button {
     align-self: center;
     border: solid 1px var(--primary);
     width: 10rem;
     border-radius: 50px;
     cursor: pointer;
+    opacity: 0;
 }
 
 @media (max-width: 1199.98px) {

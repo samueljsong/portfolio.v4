@@ -9,8 +9,10 @@ import "../index.css";
 import "../styles/Navbar.css";
 
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 export const Navbar = () => {
     useGSAP(() => {
@@ -21,6 +23,35 @@ export const Navbar = () => {
             ease: "power2.out",
         });
     });
+
+    useEffect(() => {
+        let lastScrollY = window.scrollY;
+
+        ScrollTrigger.create({
+            start: 0,
+            onUpdate: (self) => {
+                const scrollY = window.scrollY;
+
+                if (scrollY > lastScrollY) {
+                    // Scrolling down, hide the navbar
+                    gsap.to(".container", {
+                        opacity: 0,
+                        duration: 1,
+                        ease: "power2.out",
+                    });
+                } else {
+                    // Scrolling up, show the navbar
+                    gsap.to(".container", {
+                        opacity: 1,
+                        duration: 1,
+                        ease: "power2.out",
+                    });
+                }
+
+                lastScrollY = scrollY;
+            },
+        });
+    }, []);
 
     return (
         <>

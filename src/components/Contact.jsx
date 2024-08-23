@@ -59,21 +59,39 @@ export const Contact = () => {
         });
     };
 
+    useGSAP(() => {
+        const t1 = gsap.timeline();
+
+        t1.to([".contact-maintext", ".contact-info2", ".button"], {
+            opacity: 1,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 50%",
+                end: "20% 50%",
+                scrub: 1,
+                markers: true,
+            },
+        });
+    });
+
     return (
         <>
             <section className="contact">
                 <div className="contact-info">
                     {isMobile ? (
-                        <div>
+                        <div className="contact-maintext">
                             <h1 className="heading2 contact-info1">
                                 Let's Work
                             </h1>{" "}
                             <h1 className="heading2 contact-info1">Together</h1>
                         </div>
                     ) : (
-                        <h1 className="heading2 contact-info1">
-                            Let's work together
-                        </h1>
+                        <div>
+                            <h1 className="heading2 contact-info1">
+                                Let's work together
+                            </h1>
+                        </div>
                     )}
 
                     <p className="text2 contact-info2">jsong113@my.bcit.ca</p>

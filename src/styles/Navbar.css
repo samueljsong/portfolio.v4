@@ -9,6 +9,12 @@
     margin: auto;
     top: 7%;
     z-index: 5;
+
+    /* padding: 1rem; */
+}
+
+.contact-maintext {
+    opacity: 0;
 }
 
 .container-size {
