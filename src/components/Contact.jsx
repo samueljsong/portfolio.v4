@@ -70,7 +70,7 @@ export const Contact = () => {
                 start: "top 50%",
                 end: "20% 50%",
                 scrub: 1,
-                markers: true,
+                // markers: true,
             },
         });
     });
