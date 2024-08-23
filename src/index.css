@@ -31,7 +31,9 @@ p {
     --accent: #e0b082;
     --tertiary: #888888;
     /* --highlight: #0cf2a2; */
-    --highlight: #7d887a;
+    /* --highlight: #7d887a; */
+    --highlight: #68a77c;
+    /* --highlight: #2d593d; */
 
     --btn-padding: 1rem 2rem 1rem 2rem;
     --mbtn-padding: 0.5rem 1rem 0.5rem 1rem;
@@ -90,7 +92,11 @@ p {
 }
 
 .fs-heading {
-    font-size: var(--fs-heading);
+    font-size: 2.4rem;
+}
+
+.fs-huge {
+    font-size: 17vw;
 }
 
 /* SCROLL BAR */
@@ -108,28 +114,70 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px; /* roundness of the scroll thumb */
 }
 
-@media (max-width: 1534px) {
-    .line-container {
-        width: 550px;
-    }
-}
-
-@media (max-width: 800px) {
-    .line-container {
-        width: 250px;
-    }
-}
-
-@media (max-width: 570px) {
+@media (max-width: 576px) {
     .btn {
         padding: var(--mbtn-padding);
     }
 
     .landing-title {
-        font-size: 35vw;
+        font-size: 5rem;
     }
 
     .info-text-container {
         width: 55%;
     }
+
+    /* WHy is this not working????? */
+    .fs-heading {
+        font-size: 1.5rem !important;
+    }
 }
+
+@media (max-width: 767.98px) {
+    .line-container {
+        width: 250px;
+    }
+
+    .fs-huge {
+        font-size: 10rem;
+    }
+
+    .fs-heading {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .fs-huge {
+        font-size: 15rem;
+    }
+
+    .fs-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .line-container {
+        width: 550px;
+    }
+
+    .fs-huge {
+        font-size: 20vw;
+    }
+    .fs-heading {
+        font-size: 3vw;
+    }
+}
+
+/* @media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+} */

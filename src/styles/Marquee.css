@@ -1,0 +1,17 @@
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.marquee-content span {
+    display: inline-block;
+    padding: 0 1rem; /* Adjust as needed */
+
+    color: var(--highlight);
+}

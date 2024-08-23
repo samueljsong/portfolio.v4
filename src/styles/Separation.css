@@ -8,7 +8,7 @@
 }
 
 .separation-container {
-    width: 90%;
+    width: 50%;
     max-width: 50rem;
     display: flex;
     flex-direction: column;
@@ -24,4 +24,31 @@
 .text-container {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+    .separation-main-container {
+        width: 100%;
+    }
+
+    .separation-right {
+        justify-content: center;
+    }
+
+    .separation-left {
+        justify-content: center;
+    }
+
+    .separation-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
 }

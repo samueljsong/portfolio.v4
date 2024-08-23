@@ -11,6 +11,9 @@ import "../styles/ProjectCard.css";
 //Images
 import bottomright from "../assets/img/bottomright.svg";
 
+//Components
+import { InfiniteMarquee } from "./Marquee";
+
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -31,12 +34,6 @@ export const ProjectCard = ({ id, title, num }) => {
             duration: 0.5,
             ease: "power2.out",
         });
-
-        gsap.to(`.${id} > .project-line`, {
-            backgroundColor: "var(--highlight)",
-            duration: 0.5,
-            ease: "power2.out",
-        });
     };
 
     const onMouseLeaveCardHandler = () => {
@@ -49,12 +46,6 @@ export const ProjectCard = ({ id, title, num }) => {
 
         gsap.to(`.${id} > .project-bottom > .project-title`, {
             color: "var(--primary)",
-            duration: 0.5,
-            ease: "power2.out",
-        });
-
-        gsap.to(`.${id} > .project-line`, {
-            backgroundColor: "var(--primary)",
             duration: 0.5,
             ease: "power2.out",
         });
@@ -81,7 +72,8 @@ export const ProjectCard = ({ id, title, num }) => {
                     eligendi.
                 </p>
             </div>
-            <span className="project-line"></span>
+            <InfiniteMarquee></InfiniteMarquee>
+            {/* <span className="project-line"></span> */}
         </div>
     );
 };

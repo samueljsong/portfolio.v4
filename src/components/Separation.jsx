@@ -15,15 +15,8 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export const Separation = ({ num, text, side }) => {
-    useEffect(() => {
-        const container = document.querySelector(".separation-main-container");
-
-        if (side == "right") container.classList.add("separation-right");
-        else container.classList.remove(".separation-right");
-    }, []);
-
     return (
-        <div className="separation-main-container">
+        <div className={`separation-main-container separation-${side}`}>
             <div className="separation-container">
                 <span className="line"></span>
                 <div className="text-container">

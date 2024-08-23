@@ -1,10 +1,11 @@
 .project-card-container {
     cursor: pointer;
-    width: 40%;
+    width: 50%;
+    max-width: 40rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
+    /* position: absolute; */
     /* background: linear-gradient(to bottom right, #ffffff, #eeedeb); */
     border-radius: 25px;
 }
@@ -59,4 +60,57 @@
     width: 100%;
     background-color: var(--primary);
     transition: 0.5s ease-out;
+}
+
+@media (max-width: 1199.98px) {
+    .project-card-container {
+        width: 60%;
+    }
+
+    .project-num {
+        font-size: 3rem;
+    }
+
+    .project-title {
+        font-size: 3rem;
+    }
+
+    .arrow-container {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .arrow-container > img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+    .project-card-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .project-num {
+        font-size: 9vw;
+    }
+
+    .project-title {
+        font-size: 9vw;
+    }
+
+    .arrow-container {
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .arrow-container > img {
+        height: 4vw;
+        width: 9vw;
+    }
 }

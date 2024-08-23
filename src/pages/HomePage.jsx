@@ -53,9 +53,9 @@ export const HomePage = () => {
     useGSAP(() => {
         const t1 = gsap.timeline();
 
-        t1.from(".software", {
-            right: "-15%",
-            opacity: 0,
+        t1.to(".software", {
+            right: "-10%",
+            opacity: 1,
             duration: 2,
             ease: "power2.out",
             delay: 0.5,
@@ -104,8 +104,10 @@ export const HomePage = () => {
             <div className="main-container">
                 <section className="landingHome">
                     <div className="landingHome-info">
-                        <h1 className="heading4 software">SOFTWARE</h1>
-                        <h1 className="heading4 developer">DEVELOPER</h1>
+                        <h1 className="heading4 software fs-huge">SOFTWARE</h1>
+                        <h1 className="heading4 developer fs-huge">
+                            DEVELOPER
+                        </h1>
                     </div>
                 </section>
                 <Separation num={"01"} text={"WHO AM I?"} side={"right"} />

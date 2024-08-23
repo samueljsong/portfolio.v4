@@ -28,7 +28,7 @@ export const About = () => {
             ease: "power2.out",
             scrollTrigger: {
                 trigger: ".landingHome",
-                start: "70% 20%",
+                start: "60% 20%",
                 end: "bottom 10%",
                 scrub: 1,
                 // markers: true,
