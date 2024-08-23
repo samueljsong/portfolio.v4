@@ -19,6 +19,14 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export const Contact = () => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 575.98);
+
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            setIsMobile(window.innerWidth < 575.98);
+        });
+    });
+
     const buttonRef = useRef(null);
 
     const handleMouseEnter = () => {
@@ -55,9 +63,19 @@ export const Contact = () => {
         <>
             <section className="contact">
                 <div className="contact-info">
-                    <h1 className="heading2 contact-info1">
-                        Let's work together
-                    </h1>
+                    {isMobile ? (
+                        <div>
+                            <h1 className="heading2 contact-info1">
+                                Let's Work
+                            </h1>{" "}
+                            <h1 className="heading2 contact-info1">Together</h1>
+                        </div>
+                    ) : (
+                        <h1 className="heading2 contact-info1">
+                            Let's work together
+                        </h1>
+                    )}
+
                     <p className="text2 contact-info2">jsong113@my.bcit.ca</p>
                     <div
                         className="button btn"
