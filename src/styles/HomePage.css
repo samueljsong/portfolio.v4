@@ -59,7 +59,10 @@
     padding: 20vh 0 20vh 0;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
 }
 
 @media (max-width: 767.98px) {
@@ -69,8 +72,12 @@
     }
 }
 
-@media (max-width: 991.98px) {
-}
+@media (max-width: 575.98px) {
+    .landingHome {
+        height: 75vh;
+    }
 
-@media (max-width: 1199.98px) {
+    .developer {
+        -webkit-text-stroke-width: 1.5px;
+    }
 }

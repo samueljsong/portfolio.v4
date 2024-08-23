@@ -114,22 +114,26 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px; /* roundness of the scroll thumb */
 }
 
-@media (max-width: 576px) {
-    .btn {
-        padding: var(--mbtn-padding);
+@media (max-width: 1199.98px) {
+    .line-container {
+        width: 550px;
     }
 
-    .landing-title {
-        font-size: 5rem;
+    .fs-huge {
+        font-size: 20vw;
     }
-
-    .info-text-container {
-        width: 55%;
-    }
-
-    /* WHy is this not working????? */
     .fs-heading {
-        font-size: 1.5rem !important;
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .fs-huge {
+        font-size: 15rem;
+    }
+
+    .fs-heading {
+        font-size: 2rem;
     }
 }
 
@@ -147,26 +151,30 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media (max-width: 991.98px) {
-    .fs-huge {
-        font-size: 15rem;
+@media (max-width: 576px) {
+    .btn {
+        padding: var(--mbtn-padding);
     }
 
-    .fs-heading {
-        font-size: 2rem;
+    .landing-title {
+        font-size: 5rem;
     }
-}
 
-@media (max-width: 1199.98px) {
-    .line-container {
-        width: 550px;
+    .info-text-container {
+        width: 55%;
     }
 
     .fs-huge {
-        font-size: 20vw;
+        font-size: 5rem;
     }
+
+    /* WHy is this not working????? */
     .fs-heading {
-        font-size: 3vw;
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
     }
 }
 
