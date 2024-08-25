@@ -20,7 +20,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-export const ProjectCard = ({ id, title, num }) => {
+export const ProjectCard = ({ id, title, num, project }) => {
     const onMouseOverCardHandler = () => {
         gsap.to(`.${id} > .project-top > .arrow-container`, {
             rotation: -90,
@@ -66,14 +66,10 @@ export const ProjectCard = ({ id, title, num }) => {
             <div className="project-bottom">
                 <h3 className={`project-title heading2 `}>{title}</h3>
                 <p className="project-information text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Totam, suscipit. Distinctio vero nisi, autem excepturi quae
-                    inventore debitis obcaecati incidunt odit qui, error at
-                    eligendi.
+                    {project.description}
                 </p>
             </div>
-            <InfiniteMarquee></InfiniteMarquee>
-            {/* <span className="project-line"></span> */}
+            <InfiniteMarquee tech={project.tech}></InfiniteMarquee>
         </div>
     );
 };

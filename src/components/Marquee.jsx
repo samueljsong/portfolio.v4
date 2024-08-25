@@ -14,7 +14,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-export const InfiniteMarquee = () => {
+export const InfiniteMarquee = ({ tech }) => {
     const marqueeRef = useRef(null);
 
     useEffect(() => {
@@ -34,11 +34,14 @@ export const InfiniteMarquee = () => {
     return (
         <div className="marquee-container">
             <div className="marquee-content" ref={marqueeRef}>
-                <span className="text">Item 1</span>
+                {tech.map((x) => {
+                    return <span className="text">{x}</span>;
+                })}
+                {/* <span className="text">Item 1</span>
                 <span className="text">Item 2</span>
                 <span className="text">Item 3</span>
                 <span className="text">Item 4</span>
-                <span className="text">Item 5</span>
+                <span className="text">Item 5</span> */}
             </div>
         </div>
     );

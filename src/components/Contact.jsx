@@ -57,6 +57,8 @@ export const Contact = () => {
             scale: 1,
             duration: 0.1,
         });
+
+        window.location.href = "mailto:semuall0108@gmail.com";
     };
 
     useGSAP(() => {
@@ -88,7 +90,7 @@ export const Contact = () => {
                         </div>
                     ) : (
                         <div>
-                            <h1 className="heading2 contact-info1">
+                            <h1 className="heading2 contact-info1 contact-maintext">
                                 Let's work together
                             </h1>
                         </div>
@@ -102,7 +104,7 @@ export const Contact = () => {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseExit}
                     >
-                        <p className="text2 contact-info3">Contact me.</p>
+                        <p className="text2 contact-info3">Contact me</p>
                     </div>
                 </div>
             </section>

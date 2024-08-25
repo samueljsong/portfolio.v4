@@ -40,7 +40,7 @@ export const Project = () => {
                     id={"portfolio"}
                     title={"Portfolio Website"}
                     num={"01"}
-                    description={portfolioDescription}
+                    project={portfolioDescription}
                 />
             </div>
             <div className="projectCard-wrapper">
@@ -48,7 +48,7 @@ export const Project = () => {
                     id={"greenbanana"}
                     title={"GreenBanana"}
                     num={"02"}
-                    description={greenbananaDescription}
+                    project={greenbananaDescription}
                 />
             </div>
             <div className="projectCard-wrapper">
@@ -56,7 +56,7 @@ export const Project = () => {
                     id={"flaker"}
                     title={"Flaker"}
                     num={"03"}
-                    description={flakerDescription}
+                    project={flakerDescription}
                 />
             </div>
             <h3 className="project-section-work heading4">WORK</h3>
@@ -64,6 +64,34 @@ export const Project = () => {
     );
 };
 
-const portfolioDescription = "";
-const greenbananaDescription = "";
-const flakerDescription = "";
+const portfolioDescription = {
+    description:
+        "Created a responsive, interactive website to showcase projects. Implemented GSAP animation to enrich user experience",
+    tech: ["GSAP", "React", "Frontend", "UI/UX", "JavaScript", "HTML", "CSS"],
+};
+const greenbananaDescription = {
+    description:
+        "Web application that allows users to upload and share images, custom URL's and code snippets.",
+    tech: [
+        "JavaScript",
+        "Cloudinary API",
+        "Express",
+        "NodeJS",
+        "SQL",
+        "MongoDB",
+        "Full Stack",
+    ],
+};
+const flakerDescription = {
+    description:
+        "Calendar application used to create global events for friends. Focused on creating a robust database.",
+    tech: [
+        "React",
+        "JavaScript",
+        "MongoDB",
+        "SQL",
+        "Express",
+        "NodeJS",
+        "Full Stack",
+    ],
+};
