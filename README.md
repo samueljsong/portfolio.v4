@@ -15,8 +15,8 @@
 
 <h2>Table of Contents</h2>
 
-- [ℹ️ About](#️-setup)
-  - [⭐ Purpose](#-purpose)
+
+- [⭐ Purpose](#-purpose)
 - [🥅 Goals](#-goals)
   - [ GSAP](#-gsap)
 - [🚩 Issues](#-issues)
@@ -25,8 +25,7 @@
 - [📜 Takeaways](#-takeaways)
 
 
-## ℹ️ About
-### ⭐ Purpose
+## ⭐ Purpose
 This Portfolio Website was created to showcase some of the projects I have created in a modern and simple way.
 
 ## 🥅 Goals
