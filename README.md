@@ -22,7 +22,7 @@
 - [🚩 Issues](#-issues)
   - [🔁 Iteration](#-iteration)
   - [📖 Knowledge](#-knowledge)
-- [📜 Takeaways](#-takeawat)
+- [📜 Takeaways](#-takeaways)
 
 
 ## ℹ️ About
