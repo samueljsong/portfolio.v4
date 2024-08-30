@@ -46,9 +46,11 @@ The Second problem was knowledge check. Creating a website that uses an animatio
 
 ## 📜 Takeaways
 ***
-Here are some of the key takeaways I gained after this project.
-* [Websites are already responsive without CSS] : Add CSS when to improve the responsiveness and do not abuse the use of media queries.
-* [CSS Variables] : Create a set of universal CSS variables for spacing, colors and more to improve the consistency of the website.
+Here are some of the key takeaways I gained after I finished developing this project.
+* [Websites are already responsive without CSS]
+  Add CSS only to improve the responsiveness and do not abuse the use of media queries.
+* [CSS Variables]
+  Create a set of universal CSS variables for spacing, colors, fontsize and more to improve the consistency of the website.
 
 
 
