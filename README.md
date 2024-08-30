@@ -22,20 +22,35 @@
 - [🚩 Issues](#-issues)
   - [🔁 Iteration](#-iteration)
   - [📖 Knowledge](#-knowledge)
+- [📜 Takeaways](#-takeawat)
 
 
 ## ℹ️ About
 ### ⭐ Purpose
-
-
+This Portfolio Website was created to showcase some of the projects I have created in a modern and simple way.
 
 ## 🥅 Goals
 
 ### GSAP
+Other than showcasing my projects, I wanted to learn GSAP, a JavaScript animation library that is used for creating smooth animations for websites.
+Furthermore, I wanted to test my react knowledge to see if I can blend animations smoothly through page transitions and to create animations that can give good user feedback.
 
 
 ## 🚩 Issues
-
+During the development of my project there were small issues I have ran into.
 ### 🔁 Iteration
+The first problem I ran into while making this project is the number of iterations I have went through. This finished project is version 4 of my portfolio.
+Through trial and error, each iteration has helped improve the finished website.
+
 ### 📖 Knowledge
+The Second problem was knowledge check. Creating a website that uses an animation framework has put my CSS knowledge to the test. 
+
+## 📜 Takeaways
+***
+Here are some of the key takeaways I gained after this project.
+* [Websites are already responsive without CSS] : Add CSS when to improve the responsiveness and do not abuse the use of media queries.
+* [CSS Variables] : Create a set of universal CSS variables for spacing, colors and more to improve the consistency of the website.
+
+
+
 
