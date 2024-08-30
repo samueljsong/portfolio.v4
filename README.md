@@ -15,7 +15,7 @@
 
 <h2>Table of Contents</h2>
 
-- [🛠️ About](#️-setup)
+- [ℹ️ About](#️-setup)
   - [⬇️ Installation](#️-installation)
     - [🐳 Docker](#-docker)
     - [📦 Project Setup](#-project-setup)
