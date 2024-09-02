@@ -11,6 +11,10 @@ import { Copyright } from "../components/Copyright";
 import { Separation } from "../components/Separation";
 import { Project } from "../components/Project";
 import { About } from "../components/About";
+import { Modal } from "../components/Modal";
+
+//Context
+import ModalContext from "../context/ModalContext";
 
 //Styles
 import "../index.css";
@@ -25,6 +29,13 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export const HomePage = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const toggleModal = () => {
+        console.log("CHECKING TO SEE IF CONTEXT WORKS");
+        setShowModal(!showModal);
+    };
+
     const lenisRef = useRef(null);
 
     useEffect(() => {
@@ -102,6 +113,7 @@ export const HomePage = () => {
         <>
             <Navbar></Navbar>
             <div className="main-container">
+                {showModal ? <Modal toggleModal={toggleModal} /> : <></>}
                 <section className="landingHome">
                     <div className="landingHome-info">
                         <h1 className="heading4 software fs-huge">SOFTWARE</h1>
@@ -113,7 +125,9 @@ export const HomePage = () => {
                 <Separation num={"01"} text={"WHO AM I?"} side={"right"} />
                 <About></About>
                 <Separation num={"02"} text={"MY WORK"} side={"left"} />
-                <Project></Project>
+                <ModalContext.Provider value={toggleModal}>
+                    <Project />
+                </ModalContext.Provider>
                 <Separation num={"03"} text={"GET IN TOUCH?"} side={"right"} />
                 <Contact></Contact>
                 <Copyright />
