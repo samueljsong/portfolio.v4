@@ -99,5 +99,5 @@ const flakerDescription = {
         "Full Stack",
     ],
     github: "https://github.com/samueljsong/Flaker-Client",
-    link: "",
+    link: "https://flaker.netlify.app",
 };

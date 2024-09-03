@@ -12,6 +12,7 @@ import { Separation } from "../components/Separation";
 import { Project } from "../components/Project";
 import { About } from "../components/About";
 import { Modal } from "../components/Modal";
+import { MoreProject } from "../components/MoreProject";
 
 //Context
 import ModalContext from "../context/ModalContext";
@@ -159,7 +160,11 @@ export const HomePage = () => {
                 <ModalContext.Provider value={modalFunctions}>
                     <Project />
                 </ModalContext.Provider>
-                <Separation num={"03"} text={"GET IN TOUCH?"} side={"right"} />
+                <Separation num={"03"} text={"OTHER WORK"} side={"right"} />
+                <ModalContext.Provider value={modalFunctions}>
+                    <MoreProject />
+                </ModalContext.Provider>
+                <Separation num={"04"} text={"GET IN TOUCH?"} side={"left"} />
                 <Contact></Contact>
                 <Copyright />
             </div>
