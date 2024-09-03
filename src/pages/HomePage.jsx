@@ -31,9 +31,31 @@ gsap.registerPlugin(ScrollTrigger);
 export const HomePage = () => {
     const [showModal, setShowModal] = useState(false);
 
+    const [modalTitle, setModalTitle] = useState("");
+    const [githubLink, setGithubLink] = useState("");
+    const [link, setLink] = useState("");
+
+    const changeGithubLink = (link) => {
+        setGithubLink(link);
+    };
+
+    const changeLink = (link) => {
+        setLink(link);
+    };
+
+    const changeModalTitle = (title) => {
+        setModalTitle(title);
+    };
+
     const toggleModal = () => {
-        console.log("CHECKING TO SEE IF CONTEXT WORKS");
         setShowModal(!showModal);
+    };
+
+    const modalFunctions = {
+        changeModalTitle: changeModalTitle,
+        toggleModal: toggleModal,
+        changeGithubLink: changeGithubLink,
+        changeLink: changeLink,
     };
 
     const lenisRef = useRef(null);
@@ -113,7 +135,16 @@ export const HomePage = () => {
         <>
             <Navbar></Navbar>
             <div className="main-container">
-                {showModal ? <Modal toggleModal={toggleModal} /> : <></>}
+                {showModal ? (
+                    <Modal
+                        toggleModal={toggleModal}
+                        modalTitle={modalTitle}
+                        githubLink={githubLink}
+                        link={link}
+                    />
+                ) : (
+                    <></>
+                )}
                 <section className="landingHome">
                     <div className="landingHome-info">
                         <h1 className="heading4 software fs-huge">SOFTWARE</h1>
@@ -125,7 +156,7 @@ export const HomePage = () => {
                 <Separation num={"01"} text={"WHO AM I?"} side={"right"} />
                 <About></About>
                 <Separation num={"02"} text={"MY WORK"} side={"left"} />
-                <ModalContext.Provider value={toggleModal}>
+                <ModalContext.Provider value={modalFunctions}>
                     <Project />
                 </ModalContext.Provider>
                 <Separation num={"03"} text={"GET IN TOUCH?"} side={"right"} />

@@ -22,7 +22,7 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export const ProjectCard = ({ id, title, num, project, openModalHandler }) => {
-    const toggleModal = useContext(ModalContext);
+    const modalFunctions = useContext(ModalContext);
 
     const onMouseOverCardHandler = () => {
         gsap.to(`.${id} > .project-top > .arrow-container`, {
@@ -54,13 +54,20 @@ export const ProjectCard = ({ id, title, num, project, openModalHandler }) => {
         });
     };
 
+    const onProjectCardClickHandler = () => {
+        modalFunctions.toggleModal();
+        modalFunctions.changeModalTitle(title);
+        modalFunctions.changeLink(project.link);
+        modalFunctions.changeGithubLink(project.github);
+    };
+
     return (
         <>
             <div
                 className={`project-card-container ${id}`}
                 onMouseEnter={onMouseOverCardHandler}
                 onMouseLeave={onMouseLeaveCardHandler}
-                onClick={toggleModal}
+                onClick={onProjectCardClickHandler}
             >
                 <div className="project-top">
                     <h3 className="heading2 project-num">{num}</h3>

@@ -32,19 +32,20 @@
 }
 
 .modal > h3 {
-    background: none;
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--primary);
+    color: var(--primary);
     font-size: 2vw;
 }
 
-.modal > button {
+.modal > a {
     background: none;
     border: solid 1px var(--primary);
     border-radius: 25px;
-    width: 10rem;
+    width: 7rem;
     cursor: pointer;
+    color: var(--primary);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 .buttonText {

@@ -35,13 +35,12 @@ export const InfiniteMarquee = ({ tech }) => {
         <div className="marquee-container">
             <div className="marquee-content" ref={marqueeRef}>
                 {tech.map((x) => {
-                    return <span className="text">{x}</span>;
+                    return (
+                        <span className="text" key={x}>
+                            {x}
+                        </span>
+                    );
                 })}
-                {/* <span className="text">Item 1</span>
-                <span className="text">Item 2</span>
-                <span className="text">Item 3</span>
-                <span className="text">Item 4</span>
-                <span className="text">Item 5</span> */}
             </div>
         </div>
     );

@@ -68,6 +68,8 @@ const portfolioDescription = {
     description:
         "Created a responsive, interactive website to showcase projects. Implemented GSAP animation to enrich user experience",
     tech: ["GSAP", "React", "Frontend", "UI/UX", "JavaScript", "HTML", "CSS"],
+    github: "https://github.com/samueljsong/portfolio.v4",
+    link: "https://samuelsong.netlify.app/",
 };
 const greenbananaDescription = {
     description:
@@ -81,6 +83,8 @@ const greenbananaDescription = {
         "MongoDB",
         "Full Stack",
     ],
+    github: "https://github.com/samueljsong/GreenBanana",
+    link: "",
 };
 const flakerDescription = {
     description:
@@ -94,4 +98,6 @@ const flakerDescription = {
         "NodeJS",
         "Full Stack",
     ],
+    github: "https://github.com/samueljsong/Flaker-Client",
+    link: "",
 };
