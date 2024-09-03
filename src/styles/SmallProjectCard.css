@@ -61,6 +61,10 @@
     border-radius: 50px;
 }
 
+.spc-infocontainer > div > h3 {
+    font-size: 1.7rem;
+}
+
 @media (max-width: 1199.98px) {
     .spc-container {
         width: 30vw;
