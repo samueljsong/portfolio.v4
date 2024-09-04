@@ -156,15 +156,15 @@ export const HomePage = () => {
                 </section>
                 <Separation num={"01"} text={"WHO AM I?"} side={"right"} />
                 <About></About>
-                <Separation num={"02"} text={"MY WORK"} side={"left"} />
+                <Separation num={"02a"} text={"MY WORK"} side={"left"} />
                 <ModalContext.Provider value={modalFunctions}>
                     <Project />
                 </ModalContext.Provider>
-                <Separation num={"03"} text={"OTHER WORK"} side={"right"} />
+                <Separation num={"02b"} text={"OTHER WORK"} side={"right"} />
                 <ModalContext.Provider value={modalFunctions}>
                     <MoreProject />
                 </ModalContext.Provider>
-                <Separation num={"04"} text={"GET IN TOUCH?"} side={"left"} />
+                <Separation num={"03"} text={"GET IN TOUCH?"} side={"left"} />
                 <Contact></Contact>
                 <Copyright />
             </div>

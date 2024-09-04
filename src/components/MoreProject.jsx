@@ -18,6 +18,25 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export const MoreProject = () => {
+    useGSAP(() => {
+        const t1 = gsap.timeline();
+
+        t1.from(".mp-container", {
+            y: 100,
+            opacity: 0,
+            duration: 0.5,
+            ease: "power2.out",
+
+            scrollTrigger: {
+                trigger: ".mp-container",
+                start: "top 30%",
+                end: "20% 30%",
+
+                scrub: 1,
+            },
+        });
+    });
+
     return (
         <section className="mp-container">
             <SmallProjectCard key={phlo.name} project={phlo} />
@@ -40,7 +59,8 @@ const phlo = {
 const repit = {
     name: "repit",
     github: "https://github.com/samueljsong/repit-c",
-    description: "Created a report system...",
+    description:
+        "Created a centralized damage report application for BCIT. Admins can manage damage reports.",
 };
 const ChickenSurvivors = {
     name: "ChickenSurvivors",
