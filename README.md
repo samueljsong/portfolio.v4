@@ -1,6 +1,4 @@
-<h1 align='center'>❄️ Samuel Song | Portfolio Website ❄️</h1>
-
-[Portfolio Website Link](https://samuelsong.netlify.app)
+<h1 align='center'>[❄️ Samuel Song | Portfolio Website ❄️](https://samuelsong.netlify.app)</h1>
 
 
 <p align='center'>
