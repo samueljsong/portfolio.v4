@@ -84,7 +84,7 @@ const greenbananaDescription = {
         "Full Stack",
     ],
     github: "https://github.com/samueljsong/GreenBanana",
-    link: "",
+    link: "https://greenbanana.onrender.com",
 };
 const flakerDescription = {
     description:
