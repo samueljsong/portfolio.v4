@@ -29,9 +29,9 @@ export const MoreProject = () => {
 
             scrollTrigger: {
                 trigger: ".mp-container",
-                start: "top 30%",
-                end: "20% 30%",
-
+                start: "top 35%",
+                end: "10% 3%",
+                // markers: 1,
                 scrub: 1,
             },
         });
