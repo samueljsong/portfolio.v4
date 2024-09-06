@@ -34,6 +34,10 @@ This Portfolio Website was created to showcase some of the projects I have creat
 Other than showcasing my projects, I wanted to learn GSAP, a JavaScript animation library that is used for creating smooth animations for websites.
 Furthermore, I wanted to test my react knowledge to see if I can blend animations smoothly through page transitions and to create animations that can give good user feedback.
 
+### Best Practices
+CSS
+* Using CSS variables for universal spacing, color, fontsize and more.
+* Focus on responsiveness.
 
 ## 🚩 Issues
 During the development of my project there were small issues I have ran into.
