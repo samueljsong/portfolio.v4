@@ -1,6 +1,6 @@
 <h1 align='center'>❄️ Samuel Song | Portfolio Website ❄️</h1>
 
-<h2 align='center' style='color:gray'><a href="samuelsong.netlify.app" target="_blank">Website Link</a></h2>
+[Portfolio Website Link](https://samuelsong.netlify.app)
 
 
 <p align='center'>
