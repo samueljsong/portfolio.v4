@@ -19,6 +19,7 @@
 - [⭐ Purpose](#-purpose)
 - [🥅 Goals](#-goals)
   - [ GSAP](#-gsap)
+  - [ Best Practices](#-bestpractices)
 - [🚩 Issues](#-issues)
   - [🔁 Iteration](#-iteration)
   - [📖 Knowledge](#-knowledge)
