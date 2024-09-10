@@ -22,7 +22,6 @@ export const About = () => {
 
     useEffect(() => {
         window.addEventListener("resize", () => {
-            console.log("window is resized");
             setIsMobile(window.innerWidth < 575.98);
         });
     });
@@ -36,11 +35,10 @@ export const About = () => {
             duration: 3,
             ease: "power2.out",
             scrollTrigger: {
-                trigger: ".landingHome",
+                trigger: ".landing",
                 start: "60% 20%",
                 end: "bottom 10%",
                 scrub: 1,
-                // markers: true,
             },
         });
     });

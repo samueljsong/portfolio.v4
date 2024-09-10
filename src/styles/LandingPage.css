@@ -31,6 +31,7 @@
     width: 40%;
     justify-content: space-between;
     color: var(--primary);
+    margin-top: 3rem;
 }
 
 .char {
@@ -77,6 +78,24 @@
     width: 2rem;
 }
 
+.down-parent {
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+    margin-top: 1rem;
+}
+
+.down-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.down-image {
+    width: 1.5rem;
+}
+
 @media (max-width: 1199.98px) {
     .landing-title > .char {
         font-size: 40vw;
@@ -92,6 +111,10 @@
 }
 
 @media (max-width: 767.98px) {
+    .landing {
+        height: 70vh;
+    }
+
     .landing-title > .char {
         font-size: 40vw;
         line-height: 100%;
@@ -99,6 +122,10 @@
 }
 
 @media (max-width: 575.98px) {
+    .landing {
+        height: 75vh;
+    }
+
     .landing-title > .char {
         font-size: 40vw;
         line-height: 100%;

@@ -79,7 +79,7 @@ export const Contact = () => {
 
     return (
         <>
-            <section className="contact">
+            <section className="contact" id="contact-session">
                 <div className="contact-info">
                     {isMobile ? (
                         <div className="contact-maintext">
@@ -96,7 +96,7 @@ export const Contact = () => {
                         </div>
                     )}
 
-                    <p className="text2 contact-info2">jsong113@my.bcit.ca</p>
+                    <p className="text2 contact-info2">semuall0108@gmail.com</p>
                     <div
                         className="button btn"
                         ref={buttonRef}

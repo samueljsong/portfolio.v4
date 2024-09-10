@@ -37,10 +37,10 @@ export const Project = () => {
         <section className="project-section">
             <div className="projectCard-wrapper">
                 <ProjectCard
-                    id={"portfolio"}
-                    title={"Portfolio Website"}
+                    id={"flaker"}
+                    title={"Flaker"}
                     num={"01"}
-                    project={portfolioDescription}
+                    project={flakerDescription}
                 />
             </div>
             <div className="projectCard-wrapper">
@@ -53,10 +53,10 @@ export const Project = () => {
             </div>
             <div className="projectCard-wrapper">
                 <ProjectCard
-                    id={"flaker"}
-                    title={"Flaker"}
+                    id={"portfolio"}
+                    title={"Portfolio Website"}
                     num={"03"}
-                    project={flakerDescription}
+                    project={portfolioDescription}
                 />
             </div>
             <h3 className="project-section-work heading4">WORK</h3>
